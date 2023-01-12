@@ -1,0 +1,6 @@
+-- 코드를 입력하세요
+/*
+일단 해야할 것 중복된 애들 이름으로 찾기-> 카운트 해서 2회 이상으로 설정
+
+*/
+SELECT NAME, COUNT(NAME) AS 카운트 FROM ANIMAL_INS GROUP BY NAME HAVING COUNT(NAME)>=2 ORDER BY NAME ;
